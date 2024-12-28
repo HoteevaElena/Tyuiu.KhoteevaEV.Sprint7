@@ -64,9 +64,6 @@ namespace Tyuiu.KhoteevaEV.Sprint7.Project.V5
                 this.chartCostData_HEV.Series[0].Points.AddXY(Convert.ToDouble(mat[i, 0]), Convert.ToDouble(mat[i, 3]));
             }
 
-            //textBoxMinAmount_HEV.Text = Convert.ToString(ds.MinAmount(mat, row));
-            //textBoxMaxAmount_HEV.Text = Convert.ToString(ds.MaxAmount(mat, row));
-            //textBoxMeanStep_BYS.Text = Convert.ToString(ds.Mean(mat, row));
             textBoxAmountProducts_HEV.Text = Convert.ToString(ds.Amount(mat, row));
             textBoxCostAllProducts_HEV.Text = Convert.ToString(ds.AllCost(mat, row));
             textBoxAverageCost_HEV.Text = Convert.ToString(ds.AllCost(mat, row) / ds.Amount(mat, row));
@@ -143,6 +140,7 @@ namespace Tyuiu.KhoteevaEV.Sprint7.Project.V5
 
         private void buttonSort_HEV_Click(object sender, EventArgs e)
         {
+            dataGridViewBase_HEV.Rows.Clear();
 
         }
 

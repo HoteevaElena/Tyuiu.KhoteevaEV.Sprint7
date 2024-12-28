@@ -48,42 +48,6 @@ namespace Tyuiu.KhoteevaEV.Sprint7.Project.V5.Lib
 
         }
 
-        //public double MinAmount(string[,] mat, int row)
-        //{
-        //    List<double> value = new List<double>();
-        //    for (int i = 0; i < row; i++)
-        //    {
-        //        value.Add(Convert.ToDouble(mat[i, 2]));
-
-        //    }
-        //    value.Sort();
-        //    return value[0];
-        //}
-
-        //public double MaxAmount(string[,] mat, int row)
-        //{
-        //    List<double> value = new List<double>();
-        //    for (int i = 0; i < row; i++)
-        //    {
-        //        value.Add(Convert.ToDouble(mat[i, 5]));
-
-        //    }
-        //    value.Sort();
-        //    return value[row - 1];
-        //}
-
-        //public double Mean(string[,] mat, int row)
-        //{
-        //    double sum = 0;
-        //    for (int i = 0; i < row; i++)
-        //    {
-        //        sum += Convert.ToDouble(mat[i, 5]);
-
-        //    }
-        //    double res = sum / row;
-        //    return Math.Round(res, 3);
-        //}
-
         public double AllCost(string[,] mat, int row)
         {
             double allcost = 0;

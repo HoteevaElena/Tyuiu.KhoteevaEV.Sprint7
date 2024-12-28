@@ -30,9 +30,9 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             openFileDialog = new OpenFileDialog();
             saveFileDialog = new SaveFileDialog();
             panelUp_HEV = new Panel();
@@ -132,6 +132,7 @@
             buttonSort_HEV.TabIndex = 17;
             buttonSort_HEV.Text = "Sort NameProduct";
             buttonSort_HEV.UseVisualStyleBackColor = false;
+            buttonSort_HEV.Visible = false;
             buttonSort_HEV.Click += buttonSort_HEV_Click;
             // 
             // buttonSave_HEV
@@ -398,17 +399,17 @@
             // 
             // chartCostData_HEV
             // 
-            chartArea1.Name = "ChartArea1";
-            chartCostData_HEV.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            chartCostData_HEV.ChartAreas.Add(chartArea2);
             chartCostData_HEV.Dock = DockStyle.Fill;
-            legend1.Name = "Legend1";
-            chartCostData_HEV.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            chartCostData_HEV.Legends.Add(legend2);
             chartCostData_HEV.Location = new Point(3, 27);
             chartCostData_HEV.Name = "chartCostData_HEV";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            chartCostData_HEV.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            chartCostData_HEV.Series.Add(series2);
             chartCostData_HEV.Size = new Size(707, 553);
             chartCostData_HEV.TabIndex = 3;
             // 
